@@ -28,9 +28,19 @@ public class VideoManager : MonoBehaviour
                 {
                     question.hasBeenAsked = true;
                     Debug.Log(question.text);
-                    foreach (var answer in question.answers)
+                    if (question.imageAnswers.Count > 0)
                     {
-                        Debug.Log(answer.text);
+                        foreach (var answer in question.imageAnswers)
+                        {
+                            Debug.Log(answer);
+                        }
+                    }
+                    else
+                    {
+                        foreach (var answer in question.answers)
+                        {
+                            Debug.Log(answer.text);
+                        }
                     }
                     playerControl.VideoStop();
                     break;
@@ -54,6 +64,7 @@ public class Question
     public string text;
     public float timeOfQuestion;
     public List<Answer> answers;
+    public List<ImageAnswer> imageAnswers;
     [NonSerialized] public bool hasBeenAsked;
 }
 
@@ -61,5 +72,11 @@ public class Question
 public class Answer
 {
     public string text;
+    public bool isCorrect;
+}
+[Serializable]
+public class ImageAnswer
+{
+    public Sprite image;
     public bool isCorrect;
 }

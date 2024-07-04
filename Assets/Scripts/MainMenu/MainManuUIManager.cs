@@ -9,6 +9,16 @@ public class MainManuUIManager : MonoBehaviour
     private int currentPilar;
     [SerializeField] private GameObject pilarsMenu;
     [SerializeField] private GameObject activitiesMenu;
+    [SerializeField] private GameObject onlineCanvases;
+
+    private void Start()
+    {
+        if (User.UserId != null)
+        {
+            onlineCanvases.SetActive(true);
+        }
+    }
+
     public void OpenPilarActivitiesMenu(int pilar)
     {
         currentPilar = pilar;
