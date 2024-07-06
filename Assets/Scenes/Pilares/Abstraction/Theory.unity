@@ -464,8 +464,40 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4415745982179208543, guid: dc067c577ec1b854684d789b6e727cc0, type: 3}
+      propertyPath: m_VideoClip
+      value: 
+      objectReference: {fileID: 32900000, guid: d135ec74a208d234ab0b0aab289ca9cb, type: 3}
+    - target: {fileID: 4415745982179208543, guid: dc067c577ec1b854684d789b6e727cc0, type: 3}
       propertyPath: m_PlayOnAwake
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4415745982179208543, guid: dc067c577ec1b854684d789b6e727cc0, type: 3}
+      propertyPath: m_ControlledAudioTrackCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4415745982179208543, guid: dc067c577ec1b854684d789b6e727cc0, type: 3}
+      propertyPath: m_DirectAudioMutes.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4415745982179208543, guid: dc067c577ec1b854684d789b6e727cc0, type: 3}
+      propertyPath: m_DirectAudioVolumes.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4415745982179208543, guid: dc067c577ec1b854684d789b6e727cc0, type: 3}
+      propertyPath: m_EnabledAudioTracks.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4415745982179208543, guid: dc067c577ec1b854684d789b6e727cc0, type: 3}
+      propertyPath: m_TargetAudioSources.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4415745982179208543, guid: dc067c577ec1b854684d789b6e727cc0, type: 3}
+      propertyPath: m_DirectAudioVolumes.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4415745982179208543, guid: dc067c577ec1b854684d789b6e727cc0, type: 3}
+      propertyPath: m_EnabledAudioTracks.Array.data[0]
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4941219564456579801, guid: dc067c577ec1b854684d789b6e727cc0, type: 3}
       propertyPath: m_Pivot.x
@@ -890,6 +922,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1651602569}
   playerControl: {fileID: 1651602562}
+  questionPanel: {fileID: 1053505318}
+  questionText: {fileID: 1755858444}
+  imageAnswersParent: {fileID: 208328605}
+  answersParent: {fileID: 1751896699}
+  imageAnswerPrefab: {fileID: 6433325641710856638, guid: dc44be53ba9244147a0efd9f6dd05157, type: 3}
+  answerPrefab: {fileID: 4509179953018516909, guid: 164fa72a723a892418ab50c14393ff03, type: 3}
   questions:
   - text: Prueba pregunta 1
     timeOfQuestion: 1
@@ -905,10 +943,24 @@ MonoBehaviour:
     - text: qwtqwtqw
       isCorrect: 0
     - text: qwtqwtqwtq
-      isCorrect: 0
+      isCorrect: 1
     - text: qwtqwtqwtqwtqwt
       isCorrect: 0
     imageAnswers: []
+  - text: 3
+    timeOfQuestion: 2
+    answers:
+    - text: qwtqwtqw
+      isCorrect: 0
+    - text: qwtqwtqwtq
+      isCorrect: 1
+    - text: qwtqwtqwtqwtqwt
+      isCorrect: 0
+    imageAnswers:
+    - image: {fileID: 21300000, guid: db3e7b7c8db355e499429545071a0321, type: 3}
+      isCorrect: 1
+    - image: {fileID: 21300000, guid: 2f8349570a152884fb6cf7ebdc8c18b3, type: 3}
+      isCorrect: 0
 --- !u!1 &702231679
 GameObject:
   m_ObjectHideFlags: 0
@@ -1050,7 +1102,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1053505319
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1904,9 +1956,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1269056236}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 960, y: -565}
   m_SizeDelta: {x: 200, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1755858444
