@@ -1,6 +1,6 @@
 public static class Constants
 {
-    public static string BASE_URI = "http://192.168.1.219:3000/api/";
+    public static string BASE_URI = "http://192.168.100.8:3000/api";
     public static int LOGIN_SCENE_INDEX = 0;
     public static int TUTORIAL_SCENE_INDEX = 1;
     public static int MAIN_MENU_SCENE_INDEX = 2;
@@ -12,4 +12,5 @@ public static class Constants
     public static int INHERITANCE_GAME_SCENE_INDEX = 8;
     public static int POLYMORPHISM_THEORY_SCENE_INDEX = 9;
     public static int POLYMORPHISM_GAME_SCENE_INDEX = 10;
+    public static int QUIZZES_SCENE_INDEX = 11;
 }

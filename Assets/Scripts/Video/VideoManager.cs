@@ -16,7 +16,7 @@ public class VideoManager : MonoBehaviour
     [SerializeField] private Transform answersParent;
     [SerializeField] private GameObject imageAnswerPrefab;
     [SerializeField] private GameObject answerPrefab;
-    public List<Question> questions;
+    public List<VideoQuestion> questions;
     private readonly float tolerance = 0.1f;
     private double lastPlayerTime = 0;
     private bool isRunning;

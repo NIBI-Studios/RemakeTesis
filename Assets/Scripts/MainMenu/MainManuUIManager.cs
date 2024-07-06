@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -10,12 +11,16 @@ public class MainManuUIManager : MonoBehaviour
     [SerializeField] private GameObject pilarsMenu;
     [SerializeField] private GameObject activitiesMenu;
     [SerializeField] private GameObject onlineCanvases;
+    [SerializeField] private TextMeshProUGUI studentName;
+    [SerializeField] private TextMeshProUGUI courseName;
 
     private void Start()
     {
         if (User.UserId != null)
         {
             onlineCanvases.SetActive(true);
+            studentName.text = User.UserName;
+            courseName.text = User.CourseName;
         }
     }
 
@@ -69,6 +74,10 @@ public class MainManuUIManager : MonoBehaviour
     public void GoToTutorial()
     {
         SceneManager.LoadScene(Constants.TUTORIAL_SCENE_INDEX);
+    }
+    public void GoToQuizzes()
+    {
+        SceneManager.LoadScene(Constants.QUIZZES_SCENE_INDEX);
     }
     public void QuitApp()
     {
