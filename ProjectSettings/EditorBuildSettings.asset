@@ -20,6 +20,27 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Pilares/Abstraction/Game.unity
     guid: 0eae6070bfd26524a8d32b86aaa954f5
+  - enabled: 1
+    path: Assets/Scenes/Pilares/Encapsulation/Theory.unity
+    guid: 0026bc37b2994014196234a389764bca
+  - enabled: 1
+    path: Assets/Scenes/Pilares/Encapsulation/Game.unity
+    guid: 67cadff6b7b37ee44902e6fa55461bcb
+  - enabled: 1
+    path: Assets/Scenes/Pilares/Inheritance/Theory.unity
+    guid: e662297c51efb954aba8be9795598a23
+  - enabled: 1
+    path: Assets/Scenes/Pilares/Inheritance/Game.unity
+    guid: 0ee6996bcf5809142b4852bbdf91937c
+  - enabled: 1
+    path: Assets/Scenes/Pilares/Polymorphism/Theory.unity
+    guid: 581f54cffbc52d545a60a6ba359af0bc
+  - enabled: 1
+    path: Assets/Scenes/Pilares/Polymorphism/Game.unity
+    guid: f42ff4596fba5e8489332abafcd1eeba
+  - enabled: 1
+    path: Assets/Scenes/QuizzesScene.unity
+    guid: 3805344ae77f21440b635d26e1450892
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260, type: 2}
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: dc5a169419fa04987b057f65238cf3ba, type: 2}
