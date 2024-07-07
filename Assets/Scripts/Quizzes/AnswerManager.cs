@@ -1,18 +1,14 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class AnswerManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private TextMeshProUGUI answerText;
+    public void SetAnswer(Answer answer)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        answerText.text = answer.text;
     }
 }

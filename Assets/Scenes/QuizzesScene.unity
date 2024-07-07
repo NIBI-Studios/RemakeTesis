@@ -780,6 +780,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: QuestionPrefab
       objectReference: {fileID: 0}
+    - target: {fileID: 4272606297844566529, guid: b17d41a6124f26c4686f0a386bf23631, type: 3}
+      propertyPath: answerPrefab
+      value: 
+      objectReference: {fileID: 7072951905381135797, guid: f458082a2a1e8d248837e9ed670bbd98, type: 3}
+    - target: {fileID: 4272606297844566529, guid: b17d41a6124f26c4686f0a386bf23631, type: 3}
+      propertyPath: answersParent
+      value: 
+      objectReference: {fileID: 1164150031}
     - target: {fileID: 5114965280311607500, guid: b17d41a6124f26c4686f0a386bf23631, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -964,6 +972,11 @@ PrefabInstance:
 --- !u!224 &1164150030 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8848124340901140018, guid: b17d41a6124f26c4686f0a386bf23631, type: 3}
+  m_PrefabInstance: {fileID: 1164150029}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &1164150031 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6267336349222313865, guid: b17d41a6124f26c4686f0a386bf23631, type: 3}
   m_PrefabInstance: {fileID: 1164150029}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1245576772
