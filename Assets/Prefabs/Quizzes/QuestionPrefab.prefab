@@ -385,6 +385,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questionText: {fileID: 8134432848959527203}
+  answersParent: {fileID: 6267336349222313865}
+  answerPrefab: {fileID: 7072951905381135797, guid: f458082a2a1e8d248837e9ed670bbd98, type: 3}
 --- !u!1 &5341291595729943650
 GameObject:
   m_ObjectHideFlags: 0

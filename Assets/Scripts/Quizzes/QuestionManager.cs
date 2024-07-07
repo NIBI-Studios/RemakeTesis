@@ -8,6 +8,7 @@ public class QuestionManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI questionText;
     [SerializeField] private Transform answersParent;
     [SerializeField] private GameObject answerPrefab;
+    private GameObject currentSelectedAnswer;
     public void SetQuestion(Question question)
     {
         questionText.text = question.text;
@@ -18,7 +19,12 @@ public class QuestionManager : MonoBehaviour
             instantiated.GetComponent<AnswerManager>().SetAnswer(answer);
             instantiated.GetComponent<Button>().onClick.AddListener(() =>
             {
-                instantiated.GetComponent<Image>().color = new Color(121, 130, 207);
+                if (currentSelectedAnswer != null)
+                {
+                    currentSelectedAnswer.GetComponent<Image>().color = Color.white;
+                }
+                instantiated.GetComponent<Image>().color = new Color(121f / 255f, 130f / 255f, 207f / 255f);
+                currentSelectedAnswer = instantiated;
                 if (answer.isCorrect)
                 {
 

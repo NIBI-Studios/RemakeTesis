@@ -42,6 +42,7 @@ public class QuizManager : MonoBehaviour
             int index = i;
             nextButton.onClick.AddListener(() => ShowNextQuestion(index));
             backButton.onClick.AddListener(() => ShowPreviousQuestion(index));
+            instantiated.SetActive(false);
             if (instantiatedPrefabs.Count > 0)
             {
                 instantiatedPrefabs[currentIndex].SetActive(true);
