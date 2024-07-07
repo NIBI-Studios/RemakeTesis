@@ -7,19 +7,19 @@ public class VideoQuestion
 {
     public string text;
     public float timeOfQuestion;
-    public List<Answer> answers;
-    public List<ImageAnswer> imageAnswers;
+    public List<VideoAnswer> answers;
+    public List<VideoImageAnswer> imageAnswers;
     [NonSerialized] public bool hasBeenAsked;
 }
 
 [Serializable]
-public class Answer
+public class VideoAnswer
 {
     public string text;
     public bool isCorrect;
 }
 [Serializable]
-public class ImageAnswer
+public class VideoImageAnswer
 {
     public Sprite image;
     public bool isCorrect;
