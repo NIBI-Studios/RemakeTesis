@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class QuizzesManager : MonoBehaviour
@@ -64,5 +65,15 @@ public class QuizzesManager : MonoBehaviour
             }
         }
         isFetchingQuizzes = false;
+    }
+
+    public void GoToMainMenu()
+    {
+        SceneManager.LoadScene(Constants.MAIN_MENU_SCENE_INDEX);
+    }
+
+    public void RefreshQuizzes()
+    {
+        SceneManager.LoadScene(Constants.QUIZZES_SCENE_INDEX);
     }
 }
