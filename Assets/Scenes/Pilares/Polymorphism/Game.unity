@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028331, g: 0.22571519, b: 0.30692264, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028355, g: 0.22571544, b: 0.30692318, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1297,6 +1297,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 180968, guid: 3ac146b9578b7914db23c8e3518933b2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1738371825}
+    - targetCorrespondingSourceObject: {fileID: 180968, guid: 3ac146b9578b7914db23c8e3518933b2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1738371828}
   m_SourcePrefab: {fileID: 100100000, guid: 3ac146b9578b7914db23c8e3518933b2, type: 3}
 --- !u!4 &36690025 stripped
 Transform:
@@ -6871,7 +6874,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\xA1Excelente Trabajo!\nSigue as\xED"
+  m_text: "La invasi\xF3n termin\xF3.\n\xA1Excelente trabajo!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -22210,7 +22213,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\xA1Muchos errores!\nIntentalo de nuevo\n"
+  m_text: 'Los monstruos ingresaron a la ciudad.
+
+    Todos los ciudadanos han muerto.
+
+    Intentalo
+    de nuevo.
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -32507,7 +32517,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Si los enemigos llegan a la puerta del castillo perder\xE1s q vida.\n\r\n-
+  m_text: "Si los enemigos llegan a la puerta del castillo perder\xE1s 1 vida.\n\r\n-
     Si pierdes 5 vidas el juego terminar\xE1.\n- Sobrevive a 3 oleadas diferentes
     y salva a tu pueblo."
   m_isRightToLeft: 0
@@ -43772,6 +43782,29 @@ MonoBehaviour:
   bullet: {fileID: 6196077158356082103, guid: c23535772f0f88a4c98a3100dd3c56fe, type: 3}
   firePoint: {fileID: 1081758148}
   canFire: 0
+--- !u!136 &1738371828
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738371822}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.003475929
+  m_Height: 0.03711404
+  m_Direction: 1
+  m_Center: {x: -0.0005577185, y: 0.0014197612, z: -0.00027495352}
 --- !u!1001 &1740568985
 PrefabInstance:
   m_ObjectHideFlags: 0
