@@ -100,7 +100,7 @@ public class VideoManager : MonoBehaviour
                         {
                             GameObject instantiated = Instantiate(answerPrefab, answersParent);
                             instantiated.GetComponentInChildren<TextMeshProUGUI>().text = answer.text;
-                            instantiated.GetComponent<RawImage>().color = _answerColors[i++];
+                            instantiated.GetComponent<Image>().color = _answerColors[i++];
                             instantiated.GetComponent<Button>().onClick.AddListener(() =>
                             {
                                 if (answer.isCorrect)
