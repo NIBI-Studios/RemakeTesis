@@ -18,6 +18,7 @@ public class VideoManager : MonoBehaviour
     [SerializeField] private GameObject imageAnswerPrefab;
     [SerializeField] private GameObject answerPrefab;
     [SerializeField] private GameObject continueToExamplesButton;
+    [SerializeField] private GameObject examples;
     [SerializeField] private string pillar;
     public List<VideoQuestion> questions;
     private readonly float tolerance = 0.1f;
@@ -42,6 +43,7 @@ public class VideoManager : MonoBehaviour
                     StartCoroutine(nameof(CheckExcercise));
                 }
                 continueToExamplesButton.SetActive(false);
+                examples.SetActive(true);
             });
             if (!isUpdatingTheory)
             {
