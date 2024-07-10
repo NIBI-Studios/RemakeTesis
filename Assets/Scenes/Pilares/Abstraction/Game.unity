@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 281728}
   m_Layer: 0
   m_Name: Card 2
-  m_TagString: Untagged
+  m_TagString: Incorrecto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -318,7 +318,7 @@ GameObject:
   - component: {fileID: 31025665}
   m_Layer: 0
   m_Name: Card 5
-  m_TagString: Untagged
+  m_TagString: Incorrecto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -424,7 +424,7 @@ GameObject:
   - component: {fileID: 44862979}
   m_Layer: 0
   m_Name: Card 3
-  m_TagString: Untagged
+  m_TagString: Correcto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -787,7 +787,7 @@ GameObject:
   - component: {fileID: 119015240}
   m_Layer: 0
   m_Name: Card 7
-  m_TagString: Untagged
+  m_TagString: Incorrecto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -893,7 +893,7 @@ GameObject:
   - component: {fileID: 158813772}
   m_Layer: 0
   m_Name: 'Card 8 '
-  m_TagString: Untagged
+  m_TagString: Correcto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1133,7 +1133,7 @@ GameObject:
   - component: {fileID: 162841861}
   m_Layer: 0
   m_Name: Card 6
-  m_TagString: Untagged
+  m_TagString: Incorrecto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1239,7 +1239,7 @@ GameObject:
   - component: {fileID: 193037595}
   m_Layer: 0
   m_Name: 'Card 8 '
-  m_TagString: Untagged
+  m_TagString: Incorrecto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1991,7 +1991,7 @@ GameObject:
   - component: {fileID: 236753628}
   m_Layer: 0
   m_Name: Card 9
-  m_TagString: Untagged
+  m_TagString: Correcto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2364,7 +2364,7 @@ GameObject:
   - component: {fileID: 281229922}
   m_Layer: 0
   m_Name: 'Card 8 '
-  m_TagString: Untagged
+  m_TagString: Incorrecto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2470,7 +2470,7 @@ GameObject:
   - component: {fileID: 284501307}
   m_Layer: 0
   m_Name: Card 5
-  m_TagString: Untagged
+  m_TagString: Correcto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3286,7 +3286,7 @@ GameObject:
   - component: {fileID: 380579296}
   m_Layer: 0
   m_Name: Card 3
-  m_TagString: Untagged
+  m_TagString: Incorrecto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4247,7 +4247,7 @@ GameObject:
   - component: {fileID: 449358821}
   m_Layer: 0
   m_Name: Card 6
-  m_TagString: Untagged
+  m_TagString: Incorrecto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4705,7 +4705,7 @@ GameObject:
   - component: {fileID: 495955661}
   m_Layer: 0
   m_Name: Card 3
-  m_TagString: Untagged
+  m_TagString: Incorrecto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5020,7 +5020,7 @@ GameObject:
   - component: {fileID: 519352813}
   m_Layer: 0
   m_Name: Card 9
-  m_TagString: Untagged
+  m_TagString: Correcto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5126,7 +5126,7 @@ GameObject:
   - component: {fileID: 524057952}
   m_Layer: 0
   m_Name: Card 5
-  m_TagString: Untagged
+  m_TagString: Incorrecto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5419,11 +5419,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc067c577ec1b854684d789b6e727cc0, type: 3}
---- !u!1 &529393969 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1503989109714432937, guid: dc067c577ec1b854684d789b6e727cc0, type: 3}
-  m_PrefabInstance: {fileID: 529393968}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &529393970 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4941219564456579801, guid: dc067c577ec1b854684d789b6e727cc0, type: 3}
@@ -5809,7 +5804,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: tamanio
+  m_text: "tama\xF1o"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6058,7 +6053,7 @@ GameObject:
   - component: {fileID: 614120122}
   m_Layer: 0
   m_Name: Card 6
-  m_TagString: Untagged
+  m_TagString: Incorrecto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6998,7 +6993,7 @@ GameObject:
   - component: {fileID: 676673457}
   m_Layer: 0
   m_Name: Card 1
-  m_TagString: Untagged
+  m_TagString: Correcto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7452,7 +7447,7 @@ GameObject:
   - component: {fileID: 696691802}
   m_Layer: 0
   m_Name: Card 10
-  m_TagString: Untagged
+  m_TagString: Correcto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8062,7 +8057,7 @@ GameObject:
   - component: {fileID: 722884614}
   m_Layer: 0
   m_Name: Card 9
-  m_TagString: Untagged
+  m_TagString: Incorrecto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9170,7 +9165,7 @@ GameObject:
   - component: {fileID: 845590308}
   m_Layer: 0
   m_Name: Card 10
-  m_TagString: Untagged
+  m_TagString: Incorrecto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9463,7 +9458,7 @@ GameObject:
   - component: {fileID: 864712175}
   m_Layer: 0
   m_Name: Card 4
-  m_TagString: Untagged
+  m_TagString: Correcto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10567,7 +10562,7 @@ GameObject:
   - component: {fileID: 948668843}
   m_Layer: 0
   m_Name: Card 4
-  m_TagString: Untagged
+  m_TagString: Incorrecto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10900,7 +10895,7 @@ GameObject:
   - component: {fileID: 1001600691}
   m_Layer: 0
   m_Name: Card 10
-  m_TagString: Untagged
+  m_TagString: Incorrecto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12479,7 +12474,7 @@ GameObject:
   - component: {fileID: 1191985291}
   m_Layer: 0
   m_Name: Card 6
-  m_TagString: Untagged
+  m_TagString: Correcto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12621,7 +12616,7 @@ GameObject:
   - component: {fileID: 1221057402}
   m_Layer: 0
   m_Name: Card 3
-  m_TagString: Untagged
+  m_TagString: Correcto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12727,7 +12722,7 @@ GameObject:
   - component: {fileID: 1231146968}
   m_Layer: 0
   m_Name: Card 9
-  m_TagString: Untagged
+  m_TagString: Correcto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13089,7 +13084,7 @@ GameObject:
   - component: {fileID: 1252942858}
   m_Layer: 0
   m_Name: Card 7
-  m_TagString: Untagged
+  m_TagString: Correcto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14424,7 +14419,7 @@ GameObject:
   - component: {fileID: 1393830562}
   m_Layer: 0
   m_Name: Card 7
-  m_TagString: Untagged
+  m_TagString: Incorrecto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14769,21 +14764,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b0139f36e00fd24dab5980864a77864, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameSceneObject: {fileID: 0}
-  tutorialObject: {fileID: 529393969}
-  challenge1: {fileID: 705011676}
-  challenge2: {fileID: 2087330604}
-  challenge3: {fileID: 620970740}
-  challenge4: {fileID: 864353731}
-  goal1: {fileID: 0}
-  goal2: {fileID: 0}
-  goal3: {fileID: 0}
-  goal4: {fileID: 0}
-  error1: {fileID: 877649691}
-  error2: {fileID: 461413253}
-  error3: {fileID: 1124074261}
-  loseScreen: {fileID: 116908417}
-  winScreen: {fileID: 705025423}
+  life1: {fileID: 1124074261}
+  life2: {fileID: 461413253}
+  life3: {fileID: 877649691}
+  challange1: {fileID: 705011676}
+  challange2: {fileID: 2087330604}
+  challange3: {fileID: 620970740}
+  challange4: {fileID: 864353731}
+  loseCanvas: {fileID: 0}
+  winCanvas: {fileID: 0}
 --- !u!1 &1446882218
 GameObject:
   m_ObjectHideFlags: 0
@@ -14920,7 +14909,7 @@ GameObject:
   - component: {fileID: 1460533770}
   m_Layer: 0
   m_Name: 'Card 8 '
-  m_TagString: Untagged
+  m_TagString: Incorrecto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15026,7 +15015,7 @@ GameObject:
   - component: {fileID: 1471164061}
   m_Layer: 0
   m_Name: Card 4
-  m_TagString: Untagged
+  m_TagString: Correcto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15255,7 +15244,7 @@ GameObject:
   - component: {fileID: 1494166194}
   m_Layer: 0
   m_Name: Card 4
-  m_TagString: Untagged
+  m_TagString: Incorrecto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15361,7 +15350,7 @@ GameObject:
   - component: {fileID: 1497493842}
   m_Layer: 0
   m_Name: Card 1
-  m_TagString: Untagged
+  m_TagString: Correcto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16426,7 +16415,7 @@ GameObject:
   - component: {fileID: 1650002611}
   m_Layer: 0
   m_Name: Card 5
-  m_TagString: Untagged
+  m_TagString: Incorrecto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16612,7 +16601,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: nivelDefenza
+  m_text: nivelDefensa
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -16970,7 +16959,7 @@ GameObject:
   - component: {fileID: 1787182710}
   m_Layer: 0
   m_Name: Card 2
-  m_TagString: Untagged
+  m_TagString: Incorrecto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17856,7 +17845,7 @@ GameObject:
   - component: {fileID: 1918692173}
   m_Layer: 0
   m_Name: Card 1
-  m_TagString: Untagged
+  m_TagString: Incorrecto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18293,7 +18282,7 @@ GameObject:
   - component: {fileID: 1979776308}
   m_Layer: 0
   m_Name: Card 10
-  m_TagString: Untagged
+  m_TagString: Correcto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18778,7 +18767,7 @@ GameObject:
   - component: {fileID: 1984468728}
   m_Layer: 0
   m_Name: Card 2
-  m_TagString: Untagged
+  m_TagString: Incorrecto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19223,7 +19212,7 @@ GameObject:
   - component: {fileID: 2024594748}
   m_Layer: 0
   m_Name: Card 2
-  m_TagString: Untagged
+  m_TagString: Correcto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19329,7 +19318,7 @@ GameObject:
   - component: {fileID: 2058583648}
   m_Layer: 0
   m_Name: Card 1
-  m_TagString: Untagged
+  m_TagString: Incorrecto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19920,7 +19909,7 @@ GameObject:
   - component: {fileID: 2128099914}
   m_Layer: 0
   m_Name: Card 7
-  m_TagString: Untagged
+  m_TagString: Incorrecto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

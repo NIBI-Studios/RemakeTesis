@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 
 public class InheritanceGameManager : MonoBehaviour
 {
@@ -37,6 +38,7 @@ public class InheritanceGameManager : MonoBehaviour
         currentPoints += 1;
         if (currentPoints == maxPoints)
         {
+            StartCoroutine(nameof(CheckGameCompleted));
             winCanvas.SetActive(true);
         }
     }
@@ -59,5 +61,12 @@ public class InheritanceGameManager : MonoBehaviour
         {
             life1.SetActive(false);
         }
+    }
+    private IEnumerator CheckGameCompleted()
+    {
+        var json = $"{{\"inheritanceGame\":\"True\"}}";
+        using UnityWebRequest request = UnityWebRequest.Put($"{Constants.BASE_URI}progress/{User.UserId}", json);
+        request.SetRequestHeader("Content-Type", "application/json");
+        yield return request.SendWebRequest();
     }
 }

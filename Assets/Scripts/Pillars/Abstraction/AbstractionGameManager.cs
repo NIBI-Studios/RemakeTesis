@@ -5,103 +5,86 @@ using UnityEngine.Networking;
 
 public class AbstractionGameManager : MonoBehaviour
 {
-    [SerializeField] private GameObject gameSceneObject;
-    [SerializeField] private GameObject tutorialObject;
-    [SerializeField] private GameObject challenge1;
-    [SerializeField] private GameObject challenge2;
-    [SerializeField] private GameObject challenge3;
-    [SerializeField] private GameObject challenge4;
-    [SerializeField] private GameObject goal1;
-    [SerializeField] private GameObject goal2;
-    [SerializeField] private GameObject goal3;
-    [SerializeField] private GameObject goal4;
-    [SerializeField] private GameObject error1;
-    [SerializeField] private GameObject error2;
-    [SerializeField] private GameObject error3;
-    [SerializeField] private GameObject loseScreen;
-    [SerializeField] private GameObject winScreen;
-    private int correctAnswers = 0;
-    public void StartGame()
+    [SerializeField] private GameObject life1;
+    [SerializeField] private GameObject life2;
+    [SerializeField] private GameObject life3;
+    [SerializeField] private GameObject challange1;
+    [SerializeField] private GameObject challange2;
+    [SerializeField] private GameObject challange3;
+    [SerializeField] private GameObject challange4;
+    [SerializeField] private GameObject loseCanvas;
+    [SerializeField] private GameObject winCanvas;
+    private int currentCorrect = 0;
+    private static AbstractionGameManager _instance;
+    public static AbstractionGameManager Instance
     {
-        gameSceneObject.SetActive(true);
-        tutorialObject.SetActive(false);
-    }
-    public void OnChosenCorrect(GameObject table)
-    {
-        table.SetActive(false);
-        correctAnswers = Mathf.Clamp(++correctAnswers, 0, 2);
-    }
-    public void OnChosenIncorrect()
-    {
-        if (error2.activeInHierarchy)
+        get
         {
-            error3.SetActive(true);
-        }
-        if (error1.activeInHierarchy)
-        {
-            error2.SetActive(true);
-        }
-        else
-        {
-            error1.SetActive(true);
-        }
-        if (error3.activeInHierarchy)
-        {
-            challenge1.SetActive(false);
-            challenge2.SetActive(false);
-            challenge3.SetActive(false);
-            challenge4.SetActive(false);
-            loseScreen.SetActive(true);
+            return _instance;
         }
     }
-    public void GoToChallenge2()
+    private void Start()
     {
-        if (correctAnswers == 2)
+
+        if (_instance == null)
         {
-            correctAnswers = 0;
-            challenge1.SetActive(false);
-            goal1.SetActive(true);
-            challenge2.SetActive(true);
+            _instance = this;
+        }
+        if (_instance != this)
+        {
+            Destroy(gameObject);
         }
     }
-    public void GoToChallenge3()
+    public void Correct()
     {
-        if (correctAnswers == 2)
+        currentCorrect += 1;
+        if (currentCorrect == 4)
         {
-            correctAnswers = 0;
-            challenge2.SetActive(false);
-            goal2.SetActive(true);
-            challenge3.SetActive(true);
+            if (challange4.activeInHierarchy)
+            {
+                winCanvas.SetActive(true);
+                challange4.SetActive(false);
+            }
+            if (challange3.activeInHierarchy)
+            {
+                challange4.SetActive(true);
+                challange3.SetActive(false);
+            }
+            if (challange2.activeInHierarchy)
+            {
+                challange3.SetActive(true);
+                challange2.SetActive(false);
+            }
+            if (challange1.activeInHierarchy)
+            {
+                challange2.SetActive(true);
+                challange1.SetActive(false);
+            }
         }
     }
-    public void GoToChallenge4()
+    public void Incorrect()
     {
-        if (correctAnswers == 2)
+        if (!life3.activeInHierarchy)
         {
-            correctAnswers = 0;
-            challenge3.SetActive(false);
-            goal3.SetActive(true);
-            challenge4.SetActive(true);
+            loseCanvas.SetActive(true);
+            Destroy(this);
         }
-    }
-    public void Win()
-    {
-        if (correctAnswers == 2)
+        if (!life2.activeInHierarchy)
         {
-            correctAnswers = 0;
-            challenge4.SetActive(false);
-            goal4.SetActive(true);
-            winScreen.SetActive(true);
-            StartCoroutine(nameof(CheckGameCompleted));
+            life3.SetActive(false);
         }
-        else
+        if (!life1.activeInHierarchy)
         {
-            Debug.Log($"Faltan responder {2 - correctAnswers} cosos");
+            life2.SetActive(false);
+        }
+        if (life1.activeInHierarchy)
+        {
+            life1.SetActive(false);
         }
     }
     private IEnumerator CheckGameCompleted()
     {
-        var json = $"{{\"encapsulationGame\":\"True\"}}";
+        var json = $"{{\"abstractionGame\":\"True\"}}";
         using UnityWebRequest request = UnityWebRequest.Put($"{Constants.BASE_URI}progress/{User.UserId}", json);
         request.SetRequestHeader("Content-Type", "application/json");
         yield return request.SendWebRequest();

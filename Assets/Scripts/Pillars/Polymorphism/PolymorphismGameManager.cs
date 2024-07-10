@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Networking;
 
 public class PolymorphismGameManager : MonoBehaviour
 {
@@ -54,6 +55,7 @@ public class PolymorphismGameManager : MonoBehaviour
         }
         else
         {
+            StartCoroutine(nameof(CheckGameCompleted));
             winCanvas.SetActive(true);
         }
     }
@@ -88,5 +90,13 @@ public class PolymorphismGameManager : MonoBehaviour
     {
         hordeText.text = $"Horda: {currentHorde} / {totalHordes}";
         lifeText.text = $"Vidas: {playerLives}";
+    }
+
+    private IEnumerator CheckGameCompleted()
+    {
+        var json = $"{{\"polymorphismGame\":\"True\"}}";
+        using UnityWebRequest request = UnityWebRequest.Put($"{Constants.BASE_URI}progress/{User.UserId}", json);
+        request.SetRequestHeader("Content-Type", "application/json");
+        yield return request.SendWebRequest();
     }
 }
