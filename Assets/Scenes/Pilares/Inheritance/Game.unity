@@ -833,16 +833,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Subclase Pelota
-
-    Atributos
-
-    Tipo: Futbol
-
-    Material: Cuero
-
-    Peso:
-    30'
+  m_text: "F\xFAtbol\n\nAtributos\nTipo: Futbol\nMaterial: Cuero\nPeso: 30"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1019,13 +1010,13 @@ Transform:
   m_GameObject: {fileID: 150314407}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.8801715, z: -0, w: 0.4746559}
-  m_LocalPosition: {x: -1.9212999, y: 1.0511, z: -0.4463}
+  m_LocalPosition: {x: -2.1676097, y: 0.5709418, z: -4.4764547}
   m_LocalScale: {x: 1.2033, y: 2.481325, z: 1.2033}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 323859975}
   - {fileID: 34770159}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1195376918}
   m_LocalEulerAnglesHint: {x: 0, y: 123.326, z: 0}
 --- !u!1001 &168586628
 PrefabInstance:
@@ -1710,7 +1701,7 @@ Transform:
   m_GameObject: {fileID: 219603189}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.9999646, z: -0, w: -0.008419372}
-  m_LocalPosition: {x: -0.82556146, y: 0, z: 0.26750237}
+  m_LocalPosition: {x: -1.0718712, y: -0.48015824, z: -3.7626524}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1742,7 +1733,7 @@ Transform:
   - {fileID: 1298415752}
   - {fileID: 611150276}
   - {fileID: 170738912}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1195376918}
   m_LocalEulerAnglesHint: {x: 0, y: 180.965, z: 0}
 --- !u!1 &237059018
 GameObject:
@@ -2160,9 +2151,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2006740309}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 2, y: -0.5}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &279300190
@@ -2906,7 +2897,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2109432223}
-  m_Father: {fileID: 1372772970}
+  m_Father: {fileID: 404190278}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2995,6 +2986,39 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &404190277
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 404190278}
+  m_Layer: 0
+  m_Name: TutorialObjects
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &404190278
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 404190277}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1536400730}
+  - {fileID: 403479223}
+  m_Father: {fileID: 1372772970}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &406590156
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3147,7 +3171,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Subclase Animal
+  m_text: 'Tigre
 
 
     Atributos
@@ -3371,9 +3395,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2006740309}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 0.5, y: -0.5}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &435425427
@@ -5937,7 +5961,7 @@ Transform:
   m_GameObject: {fileID: 762584695}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.862, z: 0}
+  m_LocalPosition: {x: 0, y: 1.45, z: 0}
   m_LocalScale: {x: 0.94697, y: 1.2586179, z: 0.94697}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5958,7 +5982,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -6500,9 +6524,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2006740309}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 3.5, y: -0.5}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &811192790
@@ -6719,7 +6743,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Subclase Animal
+  m_text: 'Gato
 
     Atributos
 
@@ -7957,7 +7981,7 @@ Transform:
   m_GameObject: {fileID: 966342885}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.862, z: 0}
+  m_LocalPosition: {x: 0, y: 1.412, z: 0}
   m_LocalScale: {x: 0.94697, y: 1.2586179, z: 0.94697}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7978,7 +8002,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -8009,7 +8033,7 @@ Transform:
   m_GameObject: {fileID: 969614007}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.9999646, z: -0, w: -0.008419372}
-  m_LocalPosition: {x: -1.3843374, y: 2.7325084, z: 1.7899705}
+  m_LocalPosition: {x: -1.6306472, y: 2.25235, z: -2.2401843}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8022,7 +8046,7 @@ Transform:
   - {fileID: 626239328}
   - {fileID: 1398887783}
   - {fileID: 630707788}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1195376918}
   m_LocalEulerAnglesHint: {x: 0, y: 180.965, z: 0}
 --- !u!1 &985135600
 GameObject:
@@ -9429,7 +9453,7 @@ Transform:
   m_GameObject: {fileID: 1065009352}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.862, z: 0}
+  m_LocalPosition: {x: 0, y: 1.45, z: 0}
   m_LocalScale: {x: 0.94697, y: 1.2586179, z: 0.94697}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9450,7 +9474,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -9513,7 +9537,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Subclase Pelota
+  m_text: 'Basket
 
 
     Atributos
@@ -10033,14 +10057,51 @@ Transform:
   m_GameObject: {fileID: 1192066697}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.5021768, z: -0, w: -0.864765}
-  m_LocalPosition: {x: -2.878, y: 1.0511, z: 0.248}
+  m_LocalPosition: {x: -3.1243098, y: 0.5709418, z: -3.7821548}
   m_LocalScale: {x: 1.2033, y: 2.481325, z: 1.2033}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 522783558}
   - {fileID: 1582808412}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1195376918}
   m_LocalEulerAnglesHint: {x: 0, y: 299.712, z: 0}
+--- !u!1 &1195376917
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1195376918}
+  m_Layer: 0
+  m_Name: GameObjects
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1195376918
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195376917}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.24630973, y: 0.48015824, z: 4.0301547}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1192066698}
+  - {fileID: 150314408}
+  - {fileID: 1933531123}
+  - {fileID: 219603190}
+  - {fileID: 2006740309}
+  - {fileID: 969614008}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1207462667
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11172,8 +11233,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1536400730}
-  - {fileID: 403479223}
+  - {fileID: 404190278}
   - {fileID: 2116251194}
   - {fileID: 1111156032}
   - {fileID: 1574338690}
@@ -11640,7 +11700,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Subclase Vehiculo
+  m_text: 'Carro
 
 
     Atributos
@@ -12221,7 +12281,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Subclase Vehiculo
+  m_text: 'Submarino
+
 
     Atributos
 
@@ -12464,10 +12525,22 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: TutorialManager, Assembly-CSharp
-        m_MethodName: GoToMainMenu
-        m_Mode: 1
+      - m_Target: {fileID: 1195376917}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 404190277}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -12520,7 +12593,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1372772970}
+    m_TransformParent: {fileID: 404190278}
     m_Modifications:
     - target: {fileID: 1503989109714432937, guid: dc067c577ec1b854684d789b6e727cc0, type: 3}
       propertyPath: m_Name
@@ -12640,11 +12713,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4941219564456579801, guid: dc067c577ec1b854684d789b6e727cc0, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.0008427249
+      value: 0.00084272487
       objectReference: {fileID: 0}
     - target: {fileID: 4941219564456579801, guid: dc067c577ec1b854684d789b6e727cc0, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.0008427249
+      value: 0.00084272487
       objectReference: {fileID: 0}
     - target: {fileID: 4941219564456579801, guid: dc067c577ec1b854684d789b6e727cc0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12668,11 +12741,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4941219564456579801, guid: dc067c577ec1b854684d789b6e727cc0, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4941219564456579801, guid: dc067c577ec1b854684d789b6e727cc0, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4941219564456579801, guid: dc067c577ec1b854684d789b6e727cc0, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -15031,17 +15104,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Subclase Vehiculo
-
-
-    Atributos
-
-    Marca: Boeing
-
-    Modelo:727
-
-    color:
-    Blanco'
+  m_text: "Avi\xF3n\n\nAtributos\nMarca: Boeing\nModelo:727\ncolor: Blanco"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -15248,13 +15311,13 @@ Transform:
   m_GameObject: {fileID: 1933531122}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.99302906, z: -0, w: 0.11787013}
-  m_LocalPosition: {x: -0.30290002, y: 1.0511, z: -1.14779}
-  m_LocalScale: {x: 1.2033, y: 2.481325, z: 1.2033}
+  m_LocalPosition: {x: -0.5492097, y: 0.5709418, z: -5.1779447}
+  m_LocalScale: {x: 1.2033001, y: 2.481325, z: 1.2033001}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1665349427}
   - {fileID: 1308893309}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1195376918}
   m_LocalEulerAnglesHint: {x: 0, y: 166.462, z: 0}
 --- !u!1 &1948181705
 GameObject:
@@ -15962,19 +16025,19 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2006740303}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 4.948}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.91784525}
   m_LocalScale: {x: 0.60225, y: 0.60225, z: 0.60225}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 435425426}
   - {fileID: 279300189}
   - {fileID: 811192789}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1195376918}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.175, y: 2.508}
+  m_AnchoredPosition: {x: -1.4213097, y: 2.0278416}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &2011046455
@@ -16255,7 +16318,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Subclase Pelota
+  m_text: 'Tenis
+
 
     Atributos
 
@@ -16667,7 +16731,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Subclase Animal
+  m_text: 'Gallina
+
 
     Atributos
 
@@ -16890,6 +16955,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8525604931754083522, guid: 6c8c5607b1d615e4992b66dcbcf18c43, type: 3}
   m_PrefabInstance: {fileID: 2097011353}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2105342170
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2105342171}
+  - component: {fileID: 2105342172}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2105342171
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105342170}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.1609757, y: 2.0273995, z: 1.6744931}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2105342172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105342170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9a359c870c0cc64db74b4a3345edff2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2109432222
 GameObject:
   m_ObjectHideFlags: 0
@@ -17158,9 +17267,5 @@ SceneRoots:
   - {fileID: 1674417194}
   - {fileID: 1035481743}
   - {fileID: 253208409}
-  - {fileID: 1192066698}
-  - {fileID: 150314408}
-  - {fileID: 1933531123}
-  - {fileID: 219603190}
-  - {fileID: 2006740309}
-  - {fileID: 969614008}
+  - {fileID: 1195376918}
+  - {fileID: 2105342171}
