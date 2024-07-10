@@ -2165,6 +2165,8 @@ MonoBehaviour:
   answersParent: {fileID: 1751896699}
   imageAnswerPrefab: {fileID: 6433325641710856638, guid: dc44be53ba9244147a0efd9f6dd05157, type: 3}
   answerPrefab: {fileID: 4509179953018516909, guid: 164fa72a723a892418ab50c14393ff03, type: 3}
+  continueToExamplesButton: {fileID: 0}
+  pillar: 
   questions:
   - text: "1. Antes de continuar, puedes indicar: \xBFCu\xE1l es la definici\xF3n
       de la abstracci\xF3n?"
