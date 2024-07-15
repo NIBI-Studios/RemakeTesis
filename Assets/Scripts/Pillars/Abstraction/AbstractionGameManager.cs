@@ -44,34 +44,36 @@ public class AbstractionGameManager : MonoBehaviour
             {
                 winCanvas.SetActive(true);
                 challange4.SetActive(false);
+                currentCorrect = 0;
+                StartCoroutine(nameof(CheckGameCompleted));
             }
             if (challange3.activeInHierarchy)
             {
                 challange4.SetActive(true);
                 challange3.SetActive(false);
+                currentCorrect = 0;
             }
             if (challange2.activeInHierarchy)
             {
                 challange3.SetActive(true);
                 challange2.SetActive(false);
+                currentCorrect = 0;
             }
             if (challange1.activeInHierarchy)
             {
                 challange2.SetActive(true);
                 challange1.SetActive(false);
+                currentCorrect = 0;
             }
         }
     }
     public void Incorrect()
     {
-        if (!life3.activeInHierarchy)
-        {
-            loseCanvas.SetActive(true);
-            Destroy(this);
-        }
         if (!life2.activeInHierarchy)
         {
             life3.SetActive(false);
+            loseCanvas.SetActive(true);
+            Destroy(this);
         }
         if (!life1.activeInHierarchy)
         {

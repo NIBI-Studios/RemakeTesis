@@ -7,11 +7,12 @@ public class AbstractionBullet : MonoBehaviour
         if (other.CompareTag("Correcto"))
         {
             AbstractionGameManager.Instance.Correct();
+            Destroy(other.gameObject);
         }
         if (other.CompareTag("Incorrecto"))
         {
             AbstractionGameManager.Instance.Incorrect();
+            Destroy(other.gameObject);
         }
-        Destroy(other.gameObject);
     }
 }

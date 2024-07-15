@@ -88,7 +88,7 @@ public class PolymorphismGameManager : MonoBehaviour
     }
     void UpdateUIHealth()
     {
-        hordeText.text = $"Horda: {currentHorde} / {totalHordes}";
+        hordeText.text = $"Horda: {currentHorde+1} / {totalHordes}";
         lifeText.text = $"Vidas: {playerLives}";
     }
 
