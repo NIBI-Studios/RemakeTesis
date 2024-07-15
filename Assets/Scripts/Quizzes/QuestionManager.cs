@@ -9,7 +9,7 @@ public class QuestionManager : MonoBehaviour
     [SerializeField] private Transform answersParent;
     [SerializeField] private GameObject answerPrefab;
     private GameObject currentSelectedAnswer;
-    public void SetQuestion(Question question)
+    public void SetQuestion(Question question, int index)
     {
         questionText.text = question.text;
         foreach (Answer answer in question.answers)
@@ -27,7 +27,7 @@ public class QuestionManager : MonoBehaviour
                 currentSelectedAnswer = instantiated;
                 if (answer.isCorrect)
                 {
-
+                    QuizManager.Instance.AnswerQuestion(index, answer.isCorrect);
                 }
             });
         }

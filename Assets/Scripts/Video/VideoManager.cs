@@ -141,7 +141,7 @@ public class VideoManager : MonoBehaviour
     {
         isUpdatingTheory = true;
         var json = $"{{\"{pillar}Theory\":\"True\"}}";
-        using UnityWebRequest request = UnityWebRequest.Put($"{Constants.BASE_URI}progress/{User.UserId}", json);
+        using UnityWebRequest request = UnityWebRequest.Put($"{Constants.BASE_URI}/progress/{User.UserId}", json);
         request.SetRequestHeader("Content-Type", "application/json");
         yield return request.SendWebRequest();
         isUpdatingTheory = false;
@@ -151,7 +151,7 @@ public class VideoManager : MonoBehaviour
     {
         isUpdatingExcercise = true;
         var json = $"{{\"{pillar}Excercise\":\"True\"}}";
-        using UnityWebRequest request = UnityWebRequest.Put($"{Constants.BASE_URI}progress/{User.UserId}", json);
+        using UnityWebRequest request = UnityWebRequest.Put($"{Constants.BASE_URI}/progress/{User.UserId}", json);
         request.SetRequestHeader("Content-Type", "application/json");
         yield return request.SendWebRequest();
         isUpdatingExcercise = false;

@@ -65,7 +65,7 @@ public class InheritanceGameManager : MonoBehaviour
     private IEnumerator CheckGameCompleted()
     {
         var json = $"{{\"inheritanceGame\":\"True\"}}";
-        using UnityWebRequest request = UnityWebRequest.Put($"{Constants.BASE_URI}progress/{User.UserId}", json);
+        using UnityWebRequest request = UnityWebRequest.Put($"{Constants.BASE_URI}/progress/{User.UserId}", json);
         request.SetRequestHeader("Content-Type", "application/json");
         yield return request.SendWebRequest();
     }

@@ -54,11 +54,7 @@ public class QuizzesManager : MonoBehaviour
                     instantiated.GetComponent<Button>().onClick.AddListener(() =>
                     {
                         quizPanel.SetActive(true);
-                        quizPanel.transform.FindInChildren("SendQuizButton").GetComponent<Button>().onClick.AddListener(() =>
-                        {
-
-                        });
-                        quizPanel.GetComponent<QuizManager>().SetQuiz(quiz);
+                        QuizManager.Instance.SetQuiz(quiz);
                         quizzesCanvas.SetActive(false);
                     });
                 }
